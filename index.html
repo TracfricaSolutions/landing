@@ -38,7 +38,8 @@
             overflow-x: hidden;
         }
 
-        /* Header & Navigation */
+        /* HEADER */
+
         header {
             position: fixed;
             top: 0;
@@ -96,7 +97,8 @@
             }
         }
 
-        /* Hero Section */
+        /* HERO */
+
         .hero {
             position: relative;
             min-height: 100vh;
@@ -202,7 +204,8 @@
             box-shadow: 0 0 20px rgba(0, 135, 90, 0.3);
         }
 
-        /* Sections */
+        /* SECTIONS */
+
         section {
             padding: 6rem 2rem;
             max-width: 1400px;
@@ -222,7 +225,14 @@
             margin-bottom: 3rem;
         }
 
-        /* The Problem Section */
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        /* PROBLEM */
+
         .problem {
             background-color: var(--bg-dark);
             border-top: 1px solid var(--border);
@@ -231,7 +241,10 @@
 
         .stats-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-template-columns: repeat(
+                auto-fit,
+                minmax(250px, 1fr)
+            );
             gap: 2rem;
             margin-top: 3rem;
         }
@@ -262,7 +275,8 @@
             font-size: 0.95rem;
         }
 
-        /* Why Retrofit Section */
+        /* COMPARISON */
+
         .comparison {
             margin-top: 3rem;
         }
@@ -311,7 +325,8 @@
             background-color: rgba(34, 166, 125, 0.05);
         }
 
-        /* How It Works Section */
+        /* HOW IT WORKS */
+
         .how-it-works {
             background-color: var(--bg-dark);
             border-top: 1px solid var(--border);
@@ -320,7 +335,10 @@
 
         .workflow {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            grid-template-columns: repeat(
+                auto-fit,
+                minmax(200px, 1fr)
+            );
             gap: 1.5rem;
             margin-top: 3rem;
             position: relative;
@@ -377,7 +395,8 @@
             z-index: 0;
         }
 
-        /* Prototype Section */
+        /* PROTOTYPE */
+
         .prototype {
             background-color: var(--bg-dark);
         }
@@ -415,21 +434,21 @@
             flex-shrink: 0;
         }
 
-        /* TRACFRICA DASHBOARD IMAGE */
+        /* HIER IST JETZT DAS ECHTE BILD */
+
         .prototype-image {
             width: 100%;
             aspect-ratio: 16 / 9;
             overflow: hidden;
             border: 1px solid var(--border);
-            background-color: #0A0E17;
+            background-color: rgba(27, 42, 74, 0.5);
         }
 
         .prototype-image img {
             width: 100%;
             height: 100%;
             display: block;
-            object-fit: contain;
-            background-color: #0A0E17;
+            object-fit: cover;
         }
 
         @media (max-width: 768px) {
@@ -442,7 +461,8 @@
             }
         }
 
-        /* Target Markets Section */
+        /* TARGET MARKETS */
+
         .target-markets {
             background-color: var(--bg-dark);
             border-top: 1px solid var(--border);
@@ -451,7 +471,10 @@
 
         .markets-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            grid-template-columns: repeat(
+                auto-fit,
+                minmax(280px, 1fr)
+            );
             gap: 2rem;
             margin-top: 3rem;
         }
@@ -484,7 +507,8 @@
             line-height: 1.6;
         }
 
-        /* Roadmap Section */
+        /* ROADMAP */
+
         .roadmap {
             background-color: var(--bg-dark);
         }
@@ -552,6 +576,7 @@
         }
 
         @media (max-width: 768px) {
+
             .timeline::before {
                 left: 20px;
             }
@@ -571,7 +596,8 @@
             }
         }
 
-        /* Vision Section */
+        /* VISION */
+
         .vision {
             background-color: var(--bg-dark);
             border-top: 1px solid var(--border);
@@ -587,7 +613,8 @@
             line-height: 1.8;
         }
 
-        /* Collaboration Section */
+        /* COLLABORATION */
+
         .collaboration {
             background-color: var(--bg-dark);
         }
@@ -630,7 +657,8 @@
             }
         }
 
-        /* Footer */
+        /* FOOTER */
+
         footer {
             background-color: var(--bg-darker);
             border-top: 1px solid var(--border);
@@ -642,7 +670,10 @@
             max-width: 1400px;
             margin: 0 auto;
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: repeat(
+                auto-fit,
+                minmax(300px, 1fr)
+            );
             gap: 3rem;
         }
 
@@ -681,18 +712,8 @@
             font-size: 0.9rem;
         }
 
-        /* Utility Classes */
-        .container {
-            max-width: 1400px;
-            margin: 0 auto;
-            padding: 0 2rem;
-        }
+        /* ANIMATION */
 
-        .text-center {
-            text-align: center;
-        }
-
-        /* Animation */
         @keyframes glow {
             0%, 100% {
                 box-shadow: 0 0 5px rgba(0, 135, 90, 0.1);
@@ -707,7 +728,6 @@
             animation: glow 3s ease-in-out infinite;
         }
 
-        /* Scroll animations */
         .fade-in {
             opacity: 0;
             transform: translateY(20px);
@@ -718,18 +738,19 @@
             opacity: 1;
             transform: translateY(0);
         }
+
+        .text-center {
+            text-align: center;
+        }
     </style>
 </head>
 
 <body>
 
-    <!-- Header & Navigation -->
+    <!-- HEADER -->
     <header>
         <nav>
-
-            <div class="logo">
-                TRACFRICA
-            </div>
+            <div class="logo">TRACFRICA</div>
 
             <ul class="nav-links">
                 <li><a href="#problem">The Problem</a></li>
@@ -738,36 +759,29 @@
                 <li><a href="#prototype">Prototype</a></li>
                 <li><a href="#collaboration">Collaborate</a></li>
             </ul>
-
         </nav>
     </header>
 
 
-    <!-- Hero Section -->
+    <!-- HERO -->
     <section class="hero">
 
-        <canvas
-            id="trafficCanvas"
-            class="traffic-canvas">
-        </canvas>
+        <canvas id="trafficCanvas" class="traffic-canvas"></canvas>
 
         <div class="hero-content">
 
             <h1>
                 AI-Powered
-                <span class="highlight">
-                    Adaptive Traffic
-                </span>
+                <span class="highlight">Adaptive Traffic</span>
                 Infrastructure for Emerging Markets
             </h1>
 
             <p>
-                Retrofitting existing traffic intersections with computer vision,
-                edge computing and adaptive signal control.
+                Retrofitting existing traffic intersections with
+                computer vision, edge computing and adaptive signal control.
             </p>
 
             <div class="hero-buttons">
-
                 <a href="#how-it-works" class="btn btn-primary">
                     Explore the Concept
                 </a>
@@ -775,14 +789,13 @@
                 <a href="#prototype" class="btn btn-secondary">
                     View the Prototype
                 </a>
-
             </div>
 
         </div>
     </section>
 
 
-    <!-- The Problem Section -->
+    <!-- THE PROBLEM -->
     <section id="problem" class="problem">
 
         <div class="container">
@@ -792,57 +805,42 @@
             </h2>
 
             <p class="section-subtitle">
-                Rapid urbanization is overwhelming traffic systems across emerging markets,
-                but public budgets remain limited.
+                Rapid urbanization is overwhelming traffic systems across
+                emerging markets, but public budgets remain limited.
             </p>
 
             <div class="stats-grid">
 
                 <div class="stat-card fade-in">
-                    <div class="stat-number">
-                        $55M
-                    </div>
-
+                    <div class="stat-number">$55M</div>
                     <div class="stat-label">
                         Annual congestion-related economic losses in major cities
                     </div>
                 </div>
 
-
                 <div class="stat-card fade-in">
-                    <div class="stat-number">
-                        63%
-                    </div>
-
+                    <div class="stat-number">63%</div>
                     <div class="stat-label">
-                        Operational traffic signal network (rest are broken or stolen)
+                        Operational traffic signal network
+                        (rest are broken or stolen)
                     </div>
                 </div>
 
-
                 <div class="stat-card fade-in">
-                    <div class="stat-number">
-                        5-10x
-                    </div>
-
+                    <div class="stat-number">5-10x</div>
                     <div class="stat-label">
                         Cost multiplier for greenfield infrastructure vs. retrofit
                     </div>
                 </div>
 
-
                 <div class="stat-card fade-in">
-                    <div class="stat-number">
-                        5-10 yrs
-                    </div>
-
+                    <div class="stat-number">5-10 yrs</div>
                     <div class="stat-label">
                         Typical timeline for smart city infrastructure rollout
                     </div>
                 </div>
 
             </div>
-
 
             <div style="
                 margin-top: 3rem;
@@ -853,16 +851,14 @@
             ">
 
                 <p>
-
                     <strong style="color: var(--text-light);">
                         The Status Quo:
                     </strong>
 
                     Fixed-time traffic signals operate on outdated schedules,
-                    infrastructure is aging and deteriorating, modernization requires
-                    massive capital expenditure, and implementation timelines stretch
-                    across decades.
-
+                    infrastructure is aging and deteriorating, modernization
+                    requires massive capital expenditure, and implementation
+                    timelines stretch across decades.
                 </p>
 
             </div>
@@ -871,7 +867,7 @@
     </section>
 
 
-    <!-- Why Retrofit Section -->
+    <!-- WHY RETROFIT -->
     <section id="why-retrofit" class="problem">
 
         <div class="container">
@@ -905,7 +901,6 @@
 
                     </div>
 
-
                     <div class="comparison-column highlight">
 
                         <h3>
@@ -931,7 +926,7 @@
     </section>
 
 
-    <!-- How It Works Section -->
+    <!-- HOW IT WORKS -->
     <section id="how-it-works" class="how-it-works">
 
         <div class="container">
@@ -947,87 +942,53 @@
             <div class="workflow">
 
                 <div class="workflow-step fade-in">
-
-                    <div class="step-number">
-                        1
-                    </div>
-
+                    <div class="step-number">1</div>
                     <div class="step-title">
                         Cameras Capture
                     </div>
-
                     <div class="step-description">
                         IP cameras monitor traffic flow at intersections
                     </div>
-
                 </div>
 
-
                 <div class="workflow-step fade-in">
-
-                    <div class="step-number">
-                        2
-                    </div>
-
+                    <div class="step-number">2</div>
                     <div class="step-title">
                         Edge Processing
                     </div>
-
                     <div class="step-description">
                         Lightweight edge devices process data locally
                     </div>
-
                 </div>
 
-
                 <div class="workflow-step fade-in">
-
-                    <div class="step-number">
-                        3
-                    </div>
-
+                    <div class="step-number">3</div>
                     <div class="step-title">
                         AI Detection
                     </div>
-
                     <div class="step-description">
                         YOLOv8 detects and classifies vehicles in real-time
                     </div>
-
                 </div>
 
-
                 <div class="workflow-step fade-in">
-
-                    <div class="step-number">
-                        4
-                    </div>
-
+                    <div class="step-number">4</div>
                     <div class="step-title">
                         Adaptive Optimization
                     </div>
-
                     <div class="step-description">
                         Algorithms compute optimal green-time allocation
                     </div>
-
                 </div>
 
-
                 <div class="workflow-step fade-in">
-
-                    <div class="step-number">
-                        5
-                    </div>
-
+                    <div class="step-number">5</div>
                     <div class="step-title">
                         Central Monitoring
                     </div>
-
                     <div class="step-description">
                         Traffic Control Center monitors the entire network
                     </div>
-
                 </div>
 
             </div>
@@ -1036,7 +997,7 @@
     </section>
 
 
-    <!-- Prototype Section -->
+    <!-- PROTOTYPE -->
     <section id="prototype" class="prototype">
 
         <div class="container">
@@ -1048,7 +1009,6 @@
             <p class="section-subtitle">
                 Current stage: Proof-of-concept implementation and validation.
             </p>
-
 
             <div class="prototype-content">
 
@@ -1070,12 +1030,13 @@
                 </div>
 
 
-                <!-- ECHTES TRACFRICA DASHBOARD -->
+                <!-- ECHTES TRACFRICA DASHBOARD BILD -->
+
                 <div class="prototype-image">
 
                     <img
-                        src="images/Tracfrica-Dashboard.png"
-                        alt="TRACFRICA Traffic Control Center Dashboard"
+                        src="Tracfrica-Dashboard.png"
+                        alt="TRACFRICA Dashboard"
                     >
 
                 </div>
@@ -1096,9 +1057,10 @@
                         Prototype Status:
                     </strong>
 
-                    The current implementation demonstrates core technical feasibility.
-                    This is not a production-ready system. We are actively seeking
-                    institutional partners for validation, testing, and eventual pilot deployment.
+                    The current implementation demonstrates core technical
+                    feasibility. This is not a production-ready system.
+                    We are actively seeking institutional partners for
+                    validation, testing, and eventual pilot deployment.
 
                 </p>
 
@@ -1108,7 +1070,7 @@
     </section>
 
 
-    <!-- Target Markets Section -->
+    <!-- TARGET MARKETS -->
     <section id="markets" class="target-markets">
 
         <div class="container">
@@ -1124,74 +1086,39 @@
             <div class="markets-grid">
 
                 <div class="market-card fade-in">
-
-                    <div class="market-flag">
-                        🇬🇭
-                    </div>
-
-                    <h3>
-                        Ghana
-                    </h3>
-
+                    <div class="market-flag">🇬🇭</div>
+                    <h3>Ghana</h3>
                     <p>
-                        Rapid urban growth in Accra and Kumasi with aging signal
-                        infrastructure and high congestion losses.
+                        Rapid urban growth in Accra and Kumasi with aging
+                        signal infrastructure and high congestion losses.
                     </p>
-
                 </div>
 
-
                 <div class="market-card fade-in">
-
-                    <div class="market-flag">
-                        🇨🇮
-                    </div>
-
-                    <h3>
-                        Côte d'Ivoire
-                    </h3>
-
+                    <div class="market-flag">🇨🇮</div>
+                    <h3>Côte d'Ivoire</h3>
                     <p>
-                        Abidjan's expanding metropolitan area requires intelligent
-                        traffic management solutions.
+                        Abidjan's expanding metropolitan area requires
+                        intelligent traffic management solutions.
                     </p>
-
                 </div>
 
-
                 <div class="market-card fade-in">
-
-                    <div class="market-flag">
-                        🇸🇳
-                    </div>
-
-                    <h3>
-                        Senegal
-                    </h3>
-
+                    <div class="market-flag">🇸🇳</div>
+                    <h3>Senegal</h3>
                     <p>
-                        Dakar's strategic location and growing traffic demands make
-                        it an ideal pilot location.
+                        Dakar's strategic location and growing traffic
+                        demands make it an ideal pilot location.
                     </p>
-
                 </div>
 
-
                 <div class="market-card fade-in">
-
-                    <div class="market-flag">
-                        🌴
-                    </div>
-
-                    <h3>
-                        Caribbean Region
-                    </h3>
-
+                    <div class="market-flag">🌴</div>
+                    <h3>Caribbean Region</h3>
                     <p>
-                        Island nations facing similar infrastructure challenges
-                        with limited budgets.
+                        Island nations facing similar infrastructure
+                        challenges with limited budgets.
                     </p>
-
                 </div>
 
             </div>
@@ -1200,7 +1127,7 @@
     </section>
 
 
-    <!-- Roadmap Section -->
+    <!-- ROADMAP -->
     <section id="roadmap" class="roadmap">
 
         <div class="container">
@@ -1227,7 +1154,8 @@
 
                         <p>
                             Concept development and prototype validation.
-                            Establishing technical feasibility and creating demonstration materials.
+                            Establishing technical feasibility and creating
+                            demonstration materials.
                         </p>
 
                     </div>
@@ -1288,8 +1216,9 @@
                         </h3>
 
                         <p>
-                            Scaling to multiple cities and regions based on pilot success.
-                            Building partnerships for sustainable growth.
+                            Scaling to multiple cities and regions based on
+                            pilot success. Building partnerships for
+                            sustainable growth.
                         </p>
 
                     </div>
@@ -1302,7 +1231,7 @@
     </section>
 
 
-    <!-- Vision Section -->
+    <!-- VISION -->
     <section id="vision" class="vision">
 
         <div class="container">
@@ -1312,9 +1241,9 @@
             </h2>
 
             <p class="vision-statement">
-                "Our long-term goal is to become one of the leading infrastructure
-                technology companies serving emerging markets through intelligent
-                retrofit solutions."
+                "Our long-term goal is to become one of the leading
+                infrastructure technology companies serving emerging
+                markets through intelligent retrofit solutions."
             </p>
 
         </div>
@@ -1322,7 +1251,7 @@
     </section>
 
 
-    <!-- Collaboration Section -->
+    <!-- COLLABORATION -->
     <section id="collaboration" class="collaboration">
 
         <div class="container">
@@ -1375,14 +1304,15 @@
                 <div class="collaboration-cta">
 
                     <p>
-                        We believe that solving traffic congestion in emerging markets
-                        requires collaboration between technology innovators,
-                        research institutions, government, and development partners.
+                        We believe that solving traffic congestion in
+                        emerging markets requires collaboration between
+                        technology innovators, research institutions,
+                        government, and development partners.
                     </p>
 
                     <p>
-                        If your organization is interested in exploring a partnership,
-                        we'd like to hear from you.
+                        If your organization is interested in exploring
+                        a partnership, we'd like to hear from you.
                     </p>
 
                     <a
@@ -1397,10 +1327,11 @@
             </div>
 
         </div>
+
     </section>
 
 
-    <!-- Footer -->
+    <!-- FOOTER -->
     <footer>
 
         <div class="footer-content">
@@ -1416,8 +1347,9 @@
                 </p>
 
                 <p style="margin-top: 1.5rem; font-size: 0.9rem;">
-                    Prototype stage research and development company focused
-                    on intelligent traffic infrastructure for emerging markets.
+                    Prototype stage research and development company
+                    focused on intelligent traffic infrastructure
+                    for emerging markets.
                 </p>
 
             </div>
@@ -1445,7 +1377,6 @@
                 <a
                     href="https://linkedin.com/in/andy-kwakyea"
                     target="_blank"
-                    rel="noopener noreferrer"
                 >
                     LinkedIn: Andy Kwakyea
                 </a>
@@ -1468,30 +1399,40 @@
     </footer>
 
 
+    <!-- JAVASCRIPT -->
+
     <script>
 
-        // Animated traffic canvas background
+        /* Animated traffic canvas background */
 
-        const canvas = document.getElementById('trafficCanvas');
-        const ctx = canvas.getContext('2d');
+        const canvas =
+            document.getElementById('trafficCanvas');
+
+        const ctx =
+            canvas.getContext('2d');
 
 
         function resizeCanvas() {
 
-            canvas.width = window.innerWidth;
-            canvas.height = window.innerHeight;
+            canvas.width =
+                window.innerWidth;
+
+            canvas.height =
+                window.innerHeight;
 
         }
 
 
         resizeCanvas();
 
-        window.addEventListener('resize', resizeCanvas);
+        window.addEventListener(
+            'resize',
+            resizeCanvas
+        );
 
-
-        // Simple traffic flow animation
 
         const vehicles = [];
+
         const vehicleCount = 15;
 
 
@@ -1499,16 +1440,24 @@
 
             constructor() {
 
-                this.x = Math.random() * canvas.width;
-                this.y = Math.random() * canvas.height;
+                this.x =
+                    Math.random() * canvas.width;
+
+                this.y =
+                    Math.random() * canvas.height;
 
                 this.width = 40;
+
                 this.height = 25;
 
-                this.vx = (Math.random() - 0.5) * 2;
-                this.vy = (Math.random() - 0.5) * 2;
+                this.vx =
+                    (Math.random() - 0.5) * 2;
 
-                this.opacity = Math.random() * 0.3 + 0.1;
+                this.vy =
+                    (Math.random() - 0.5) * 2;
+
+                this.opacity =
+                    Math.random() * 0.3 + 0.1;
 
             }
 
@@ -1516,6 +1465,7 @@
             update() {
 
                 this.x += this.vx;
+
                 this.y += this.vy;
 
 
@@ -1568,9 +1518,15 @@
         }
 
 
-        for (let i = 0; i < vehicleCount; i++) {
+        for (
+            let i = 0;
+            i < vehicleCount;
+            i++
+        ) {
 
-            vehicles.push(new Vehicle());
+            vehicles.push(
+                new Vehicle()
+            );
 
         }
 
@@ -1585,15 +1541,19 @@
             );
 
 
-            vehicles.forEach(vehicle => {
+            vehicles.forEach(
+                vehicle => {
 
-                vehicle.update();
-                vehicle.draw();
+                    vehicle.update();
+                    vehicle.draw();
 
-            });
+                }
+            );
 
 
-            requestAnimationFrame(animateCanvas);
+            requestAnimationFrame(
+                animateCanvas
+            );
 
         }
 
@@ -1601,33 +1561,41 @@
         animateCanvas();
 
 
-        // Scroll animations
+        /* Scroll animations */
 
         const observerOptions = {
 
             threshold: 0.1,
 
-            rootMargin: '0px 0px -50px 0px'
+            rootMargin:
+                '0px 0px -50px 0px'
 
         };
 
 
-        const observer = new IntersectionObserver(
-            (entries) => {
+        const observer =
+            new IntersectionObserver(
+                (entries) => {
 
-                entries.forEach(entry => {
+                    entries.forEach(
+                        entry => {
 
-                    if (entry.isIntersecting) {
+                            if (
+                                entry.isIntersecting
+                            ) {
 
-                        entry.target.classList.add('visible');
+                                entry.target.classList.add(
+                                    'visible'
+                                );
 
-                    }
+                            }
 
-                });
+                        }
+                    );
 
-            },
-            observerOptions
-        );
+                },
+                observerOptions
+            );
 
 
         document
@@ -1639,35 +1607,35 @@
             });
 
 
-        // Smooth scroll for navigation links
+        /* Smooth scrolling */
 
         document
             .querySelectorAll('a[href^="#"]')
             .forEach(anchor => {
 
-                anchor.addEventListener('click', function (e) {
+                anchor.addEventListener(
+                    'click',
+                    function (e) {
 
-                    e.preventDefault();
+                        e.preventDefault();
 
-                    const target =
-                        document.querySelector(
-                            this.getAttribute('href')
-                        );
+                        const target =
+                            document.querySelector(
+                                this.getAttribute('href')
+                            );
 
 
-                    if (target) {
+                        if (target) {
 
-                        target.scrollIntoView({
+                            target.scrollIntoView({
+                                behavior: 'smooth',
+                                block: 'start'
+                            });
 
-                            behavior: 'smooth',
-
-                            block: 'start'
-
-                        });
+                        }
 
                     }
-
-                });
+                );
 
             });
 
