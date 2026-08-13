@@ -3,12 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TRACFRICA Solutions - Adaptive Traffic Infrastructure</title>
-
+    <title>TRACFRICA - Adaptive Traffic Infrastructure</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
-
     <style>
         * {
             margin: 0;
@@ -38,19 +36,14 @@
             overflow-x: hidden;
         }
 
-        /* HEADER */
-
+        /* Header & Navigation */
         header {
             position: fixed;
             top: 0;
             left: 0;
             right: 0;
             z-index: 1000;
-            background: linear-gradient(
-                180deg,
-                rgba(15, 24, 35, 0.95) 0%,
-                rgba(15, 24, 35, 0.7) 100%
-            );
+            background: linear-gradient(180deg, rgba(15, 24, 35, 0.95) 0%, rgba(15, 24, 35, 0.7) 100%);
             border-bottom: 1px solid var(--border);
             backdrop-filter: blur(10px);
             padding: 1.5rem 2rem;
@@ -97,8 +90,7 @@
             }
         }
 
-        /* HERO */
-
+        /* Hero Section */
         .hero {
             position: relative;
             min-height: 100vh;
@@ -116,11 +108,7 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: linear-gradient(
-                135deg,
-                var(--navy) 0%,
-                var(--bg-darker) 100%
-            );
+            background: linear-gradient(135deg, var(--navy) 0%, var(--bg-darker) 100%);
             z-index: -1;
         }
 
@@ -204,8 +192,7 @@
             box-shadow: 0 0 20px rgba(0, 135, 90, 0.3);
         }
 
-        /* SECTIONS */
-
+        /* Sections */
         section {
             padding: 6rem 2rem;
             max-width: 1400px;
@@ -225,14 +212,7 @@
             margin-bottom: 3rem;
         }
 
-        .container {
-            max-width: 1400px;
-            margin: 0 auto;
-            padding: 0 2rem;
-        }
-
-        /* PROBLEM */
-
+        /* The Problem Section */
         .problem {
             background-color: var(--bg-dark);
             border-top: 1px solid var(--border);
@@ -241,10 +221,7 @@
 
         .stats-grid {
             display: grid;
-            grid-template-columns: repeat(
-                auto-fit,
-                minmax(250px, 1fr)
-            );
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 2rem;
             margin-top: 3rem;
         }
@@ -275,8 +252,15 @@
             font-size: 0.95rem;
         }
 
-        /* COMPARISON */
+        .stat-source {
+            color: var(--text-muted);
+            font-size: 0.75rem;
+            margin-top: 0.5rem;
+            opacity: 0.7;
+            font-style: italic;
+        }
 
+        /* Why Retrofit Section */
         .comparison {
             margin-top: 3rem;
         }
@@ -325,8 +309,7 @@
             background-color: rgba(34, 166, 125, 0.05);
         }
 
-        /* HOW IT WORKS */
-
+        /* How It Works Section */
         .how-it-works {
             background-color: var(--bg-dark);
             border-top: 1px solid var(--border);
@@ -335,10 +318,7 @@
 
         .workflow {
             display: grid;
-            grid-template-columns: repeat(
-                auto-fit,
-                minmax(200px, 1fr)
-            );
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
             gap: 1.5rem;
             margin-top: 3rem;
             position: relative;
@@ -386,17 +366,11 @@
             left: 0;
             right: 0;
             height: 2px;
-            background: linear-gradient(
-                90deg,
-                var(--border) 0%,
-                var(--green) 50%,
-                var(--border) 100%
-            );
+            background: linear-gradient(90deg, var(--border) 0%, var(--green) 50%, var(--border) 100%);
             z-index: 0;
         }
 
-        /* PROTOTYPE */
-
+        /* Prototype Section */
         .prototype {
             background-color: var(--bg-dark);
         }
@@ -434,21 +408,26 @@
             flex-shrink: 0;
         }
 
-        /* HIER IST JETZT DAS ECHTE BILD */
-
-        .prototype-image {
-            width: 100%;
-            aspect-ratio: 16 / 9;
-            overflow: hidden;
-            border: 1px solid var(--border);
+        .prototype-placeholder {
             background-color: rgba(27, 42, 74, 0.5);
+            border: 2px dashed var(--border);
+            aspect-ratio: 16/9;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
         }
 
-        .prototype-image img {
-            width: 100%;
-            height: 100%;
-            display: block;
-            object-fit: cover;
+        .placeholder-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            opacity: 0.5;
+        }
+
+        .placeholder-text {
+            color: var(--text-muted);
+            font-size: 0.95rem;
         }
 
         @media (max-width: 768px) {
@@ -461,8 +440,7 @@
             }
         }
 
-        /* TARGET MARKETS */
-
+        /* Target Markets Section */
         .target-markets {
             background-color: var(--bg-dark);
             border-top: 1px solid var(--border);
@@ -471,10 +449,7 @@
 
         .markets-grid {
             display: grid;
-            grid-template-columns: repeat(
-                auto-fit,
-                minmax(280px, 1fr)
-            );
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 2rem;
             margin-top: 3rem;
         }
@@ -507,8 +482,7 @@
             line-height: 1.6;
         }
 
-        /* ROADMAP */
-
+        /* Roadmap Section */
         .roadmap {
             background-color: var(--bg-dark);
         }
@@ -576,7 +550,6 @@
         }
 
         @media (max-width: 768px) {
-
             .timeline::before {
                 left: 20px;
             }
@@ -596,8 +569,7 @@
             }
         }
 
-        /* VISION */
-
+        /* Vision Section */
         .vision {
             background-color: var(--bg-dark);
             border-top: 1px solid var(--border);
@@ -613,8 +585,7 @@
             line-height: 1.8;
         }
 
-        /* COLLABORATION */
-
+        /* Collaboration Section */
         .collaboration {
             background-color: var(--bg-dark);
         }
@@ -657,8 +628,7 @@
             }
         }
 
-        /* FOOTER */
-
+        /* Footer */
         footer {
             background-color: var(--bg-darker);
             border-top: 1px solid var(--border);
@@ -670,10 +640,7 @@
             max-width: 1400px;
             margin: 0 auto;
             display: grid;
-            grid-template-columns: repeat(
-                auto-fit,
-                minmax(300px, 1fr)
-            );
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 3rem;
         }
 
@@ -712,13 +679,22 @@
             font-size: 0.9rem;
         }
 
-        /* ANIMATION */
+        /* Utility Classes */
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
 
+        .text-center {
+            text-align: center;
+        }
+
+        /* Animation */
         @keyframes glow {
             0%, 100% {
                 box-shadow: 0 0 5px rgba(0, 135, 90, 0.1);
             }
-
             50% {
                 box-shadow: 0 0 20px rgba(0, 135, 90, 0.3);
             }
@@ -728,6 +704,7 @@
             animation: glow 3s ease-in-out infinite;
         }
 
+        /* Scroll animations */
         .fade-in {
             opacity: 0;
             transform: translateY(20px);
@@ -738,23 +715,17 @@
             opacity: 1;
             transform: translateY(0);
         }
-
-        .text-center {
-            text-align: center;
-        }
     </style>
 </head>
-
 <body>
-
-    <!-- HEADER -->
+    <!-- Header & Navigation -->
     <header>
         <nav>
             <div class="logo">TRACFRICA</div>
-
             <ul class="nav-links">
                 <li><a href="#problem">The Problem</a></li>
                 <li><a href="#why-retrofit">Why Retrofit</a></li>
+                <li><a href="#usp">What Makes Us Different</a></li>
                 <li><a href="#how-it-works">How It Works</a></li>
                 <li><a href="#prototype">Prototype</a></li>
                 <li><a href="#collaboration">Collaborate</a></li>
@@ -762,134 +733,63 @@
         </nav>
     </header>
 
-
-    <!-- HERO -->
+    <!-- Hero Section -->
     <section class="hero">
-
         <canvas id="trafficCanvas" class="traffic-canvas"></canvas>
-
         <div class="hero-content">
-
-            <h1>
-                AI-Powered
-                <span class="highlight">Adaptive Traffic</span>
-                Infrastructure for Emerging Markets
-            </h1>
-
-            <p>
-                Retrofitting existing traffic intersections with
-                computer vision, edge computing and adaptive signal control.
-            </p>
-
+            <h1>Adaptive Traffic Control <span class="highlight">Built for How West Africa Actually Drives</span></h1>
+            <p>Trotros, okadas, unpaved feeder roads and unreliable power aren't edge cases we patch around later — they're what our detection and control logic is trained on from day one.</p>
             <div class="hero-buttons">
-                <a href="#how-it-works" class="btn btn-primary">
-                    Explore the Concept
-                </a>
-
-                <a href="#prototype" class="btn btn-secondary">
-                    View the Prototype
-                </a>
+                <a href="#how-it-works" class="btn btn-primary">Explore the Concept</a>
+                <a href="#prototype" class="btn btn-secondary">View the Prototype</a>
             </div>
-
+            <p style="margin-top: 2rem; font-size: 0.85rem; color: var(--text-muted); border-top: 1px solid var(--border); padding-top: 1.5rem; max-width: 600px; margin-left: auto; margin-right: auto;">TRACFRICA is not yet a registered company. We plan to formally incorporate once we have a validated pilot and a customer committed to investing in the product.</p>
         </div>
     </section>
 
-
-    <!-- THE PROBLEM -->
+    <!-- The Problem Section -->
     <section id="problem" class="problem">
-
         <div class="container">
-
-            <h2 class="section-title">
-                The Infrastructure Crisis
-            </h2>
-
-            <p class="section-subtitle">
-                Rapid urbanization is overwhelming traffic systems across
-                emerging markets, but public budgets remain limited.
-            </p>
-
+            <h2 class="section-title">The Infrastructure Crisis</h2>
+            <p class="section-subtitle">Rapid urbanization is overwhelming traffic systems across emerging markets, but public budgets remain limited.</p>
+            
             <div class="stats-grid">
-
                 <div class="stat-card fade-in">
-                    <div class="stat-number">$55M</div>
-                    <div class="stat-label">
-                        Annual congestion-related economic losses in major cities
-                    </div>
+                    <div class="stat-number">$416M</div>
+                    <div class="stat-label">Estimated annual economic cost of traffic congestion in Ghana</div>
+                    <div class="stat-source">Source: Glima Research, "The Cost of Gridlock" policy brief (2026)</div>
                 </div>
-
                 <div class="stat-card fade-in">
                     <div class="stat-number">63%</div>
-                    <div class="stat-label">
-                        Operational traffic signal network
-                        (rest are broken or stolen)
-                    </div>
+                    <div class="stat-label">Operational traffic signal network (rest are broken or stolen)</div>
+                    <div class="stat-source">Source: Department of Urban Roads briefing (April 2026)</div>
                 </div>
-
                 <div class="stat-card fade-in">
                     <div class="stat-number">5-10x</div>
-                    <div class="stat-label">
-                        Cost multiplier for greenfield infrastructure vs. retrofit
-                    </div>
+                    <div class="stat-label">Cost multiplier for greenfield infrastructure vs. retrofit</div>
                 </div>
-
                 <div class="stat-card fade-in">
                     <div class="stat-number">5-10 yrs</div>
-                    <div class="stat-label">
-                        Typical timeline for smart city infrastructure rollout
-                    </div>
+                    <div class="stat-label">Typical timeline for smart city infrastructure rollout</div>
                 </div>
-
             </div>
 
-            <div style="
-                margin-top: 3rem;
-                padding: 2rem;
-                background-color: rgba(27, 42, 74, 0.5);
-                border-left: 3px solid var(--red);
-                color: var(--text-muted);
-            ">
-
-                <p>
-                    <strong style="color: var(--text-light);">
-                        The Status Quo:
-                    </strong>
-
-                    Fixed-time traffic signals operate on outdated schedules,
-                    infrastructure is aging and deteriorating, modernization
-                    requires massive capital expenditure, and implementation
-                    timelines stretch across decades.
-                </p>
-
+            <div style="margin-top: 3rem; padding: 2rem; background-color: rgba(27, 42, 74, 0.5); border-left: 3px solid var(--red); color: var(--text-muted);">
+                <p><strong style="color: var(--text-light);">The Status Quo:</strong> Fixed-time traffic signals operate on outdated schedules, infrastructure is aging and deteriorating, modernization requires massive capital expenditure, and implementation timelines stretch across decades.</p>
             </div>
-
         </div>
     </section>
 
-
-    <!-- WHY RETROFIT -->
+    <!-- Why Retrofit Section -->
     <section id="why-retrofit" class="problem">
-
         <div class="container">
-
-            <h2 class="section-title">
-                Why Retrofit?
-            </h2>
-
-            <p class="section-subtitle">
-                A faster, more affordable path to intelligent traffic systems.
-            </p>
-
+            <h2 class="section-title">Why Retrofit?</h2>
+            <p class="section-subtitle">A faster, more affordable path to intelligent traffic systems.</p>
+            
             <div class="comparison">
-
                 <div class="comparison-table">
-
                     <div class="comparison-column">
-
-                        <h3>
-                            Traditional Smart City Approach
-                        </h3>
-
+                        <h3>Traditional Smart City Approach</h3>
                         <ul>
                             <li>Replace infrastructure entirely</li>
                             <li>High upfront capital costs</li>
@@ -898,126 +798,98 @@
                             <li>High execution risk</li>
                             <li>Requires sustained funding</li>
                         </ul>
-
                     </div>
-
                     <div class="comparison-column highlight">
-
-                        <h3>
-                            TRACFRICA Retrofit Approach
-                        </h3>
-
+                        <h3>TRACFRICA Retrofit Approach</h3>
                         <ul>
-                            <li>Upgrade existing intersections</li>
-                            <li>Lower deployment costs (70% reduction)</li>
-                            <li>Faster time to impact (6-12 months)</li>
-                            <li>Incremental, modular scaling</li>
-                            <li>Proven edge technology stack</li>
-                            <li>Immediate operational benefits</li>
+                            <li>Upgrade existing intersections instead of rebuilding them</li>
+                            <li>Camera + edge-AI hardware only, no new road infrastructure required</li>
+                            <li>Intersection-by-intersection rollout, not one large multi-year contract</li>
+                            <li>Detection models trained on local vehicle types and road conditions, not adapted from Western traffic data</li>
+                            <li>Designed to keep functioning through power outages and non-standard driving behavior</li>
                         </ul>
-
                     </div>
-
                 </div>
-
             </div>
-
         </div>
     </section>
 
-
-    <!-- HOW IT WORKS -->
-    <section id="how-it-works" class="how-it-works">
-
+    <!-- USP Section -->
+    <section id="usp" class="how-it-works">
         <div class="container">
+            <h2 class="section-title">What International Vendors Miss</h2>
+            <p class="section-subtitle">Kapsch TrafficCom, Siemens/Yunex and comparable systems are built for European and North American traffic — uniform vehicle classes, paved multi-lane roads, stable grid power. That's not the operating environment in Accra or Kumasi.</p>
 
-            <h2 class="section-title">
-                How the System Works
-            </h2>
+            <div class="comparison">
+                <div class="comparison-table">
+                    <div class="comparison-column">
+                        <h3>What International Systems Assume</h3>
+                        <ul>
+                            <li>Standardized vehicle classes (car, bus, truck)</li>
+                            <li>Paved, lane-marked roads</li>
+                            <li>Continuous grid power</li>
+                            <li>Predictable lane discipline</li>
+                        </ul>
+                    </div>
+                    <div class="comparison-column highlight">
+                        <h3>What We Design For From Day One</h3>
+                        <ul>
+                            <li>Local vehicle classes: trotros, okadas, shared taxis</li>
+                            <li>Unpaved and partially degraded road surfaces</li>
+                            <li>Frequent power outages at the intersection level</li>
+                            <li>Non-standard, informal driving behavior</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-            <p class="section-subtitle">
-                A five-step adaptive traffic control pipeline.
-            </p>
-
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="how-it-works">
+        <div class="container">
+            <h2 class="section-title">How the System Works</h2>
+            <p class="section-subtitle">A five-step adaptive traffic control pipeline.</p>
+            
             <div class="workflow">
-
                 <div class="workflow-step fade-in">
                     <div class="step-number">1</div>
-                    <div class="step-title">
-                        Cameras Capture
-                    </div>
-                    <div class="step-description">
-                        IP cameras monitor traffic flow at intersections
-                    </div>
+                    <div class="step-title">Cameras Capture</div>
+                    <div class="step-description">IP cameras monitor traffic flow at intersections</div>
                 </div>
-
                 <div class="workflow-step fade-in">
                     <div class="step-number">2</div>
-                    <div class="step-title">
-                        Edge Processing
-                    </div>
-                    <div class="step-description">
-                        Lightweight edge devices process data locally
-                    </div>
+                    <div class="step-title">Edge Processing</div>
+                    <div class="step-description">Lightweight edge devices process data locally</div>
                 </div>
-
                 <div class="workflow-step fade-in">
                     <div class="step-number">3</div>
-                    <div class="step-title">
-                        AI Detection
-                    </div>
-                    <div class="step-description">
-                        YOLOv8 detects and classifies vehicles in real-time
-                    </div>
+                    <div class="step-title">AI Detection</div>
+                    <div class="step-description">YOLOv8 detects and classifies vehicles in real-time</div>
                 </div>
-
                 <div class="workflow-step fade-in">
                     <div class="step-number">4</div>
-                    <div class="step-title">
-                        Adaptive Optimization
-                    </div>
-                    <div class="step-description">
-                        Algorithms compute optimal green-time allocation
-                    </div>
+                    <div class="step-title">Adaptive Optimization</div>
+                    <div class="step-description">Algorithms compute optimal green-time allocation</div>
                 </div>
-
                 <div class="workflow-step fade-in">
                     <div class="step-number">5</div>
-                    <div class="step-title">
-                        Central Monitoring
-                    </div>
-                    <div class="step-description">
-                        Traffic Control Center monitors the entire network
-                    </div>
+                    <div class="step-title">Central Monitoring</div>
+                    <div class="step-description">Traffic Control Center monitors the entire network</div>
                 </div>
-
             </div>
-
         </div>
     </section>
 
-
-    <!-- PROTOTYPE -->
+    <!-- Prototype Section -->
     <section id="prototype" class="prototype">
-
         <div class="container">
-
-            <h2 class="section-title">
-                The Prototype
-            </h2>
-
-            <p class="section-subtitle">
-                Current stage: Proof-of-concept implementation and validation.
-            </p>
-
+            <h2 class="section-title">The Prototype</h2>
+            <p class="section-subtitle">Current stage: Proof-of-concept implementation and validation.</p>
+            
             <div class="prototype-content">
-
                 <div class="prototype-description">
-
-                    <h3>
-                        What's Included
-                    </h3>
-
+                    <h3>What's Included</h3>
                     <ul>
                         <li>Real-time computer vision (YOLOv8)</li>
                         <li>Adaptive signal simulation environment</li>
@@ -1026,620 +898,230 @@
                         <li>Configurable adaptive algorithms</li>
                         <li>Support for both simulation and live footage</li>
                     </ul>
-
                 </div>
-
-
-                <!-- ECHTES TRACFRICA DASHBOARD BILD -->
-
-                <div class="prototype-image">
-
-                    <img
-                        src="Tracfrica-Dashboard.png"
-                        alt="TRACFRICA Dashboard"
-                    >
-
+                <div class="prototype-placeholder">
+                    <div class="placeholder-icon">📊</div>
+                    <div class="placeholder-text">Traffic Control Center Dashboard Mockup</div>
                 </div>
-
             </div>
 
-
-            <div style="
-                margin-top: 3rem;
-                padding: 2rem;
-                background-color: rgba(27, 42, 74, 0.3);
-                border: 1px solid var(--border);
-            ">
-
-                <p style="color: var(--text-muted);">
-
-                    <strong style="color: var(--text-light);">
-                        Prototype Status:
-                    </strong>
-
-                    The current implementation demonstrates core technical
-                    feasibility. This is not a production-ready system.
-                    We are actively seeking institutional partners for
-                    validation, testing, and eventual pilot deployment.
-
-                </p>
-
+            <div style="margin-top: 3rem; padding: 2rem; background-color: rgba(27, 42, 74, 0.3); border: 1px solid var(--border);">
+                <p style="color: var(--text-muted);"><strong style="color: var(--text-light);">Prototype Status:</strong> The current implementation demonstrates core technical feasibility. This is not a production-ready system. We are actively seeking institutional partners for validation, testing, and eventual pilot deployment.</p>
+                <p style="color: var(--text-muted); margin-top: 1rem;"><strong style="color: var(--text-light);">Company Status:</strong> TRACFRICA is currently a pre-pilot research and development project, not a registered legal entity. Formal incorporation is planned once a pilot has demonstrated real-world performance and at least one institutional or municipal partner is committed to adopting and paying for the product. We're deliberately sequencing it this way — proof before paperwork.</p>
             </div>
-
         </div>
     </section>
 
-
-    <!-- TARGET MARKETS -->
+    <!-- Target Markets Section -->
     <section id="markets" class="target-markets">
-
         <div class="container">
-
-            <h2 class="section-title">
-                Target Markets
-            </h2>
-
-            <p class="section-subtitle">
-                Emerging markets with high urbanization rates and aging traffic infrastructure.
-            </p>
-
+            <h2 class="section-title">Where We're Building First</h2>
+            <p class="section-subtitle">One primary market, one deliberate second market with matching infrastructure conditions. Not a broad list — a focused sequence.</p>
+            
             <div class="markets-grid">
-
-                <div class="market-card fade-in">
+                <div class="market-card fade-in" style="border-color: var(--green);">
                     <div class="market-flag">🇬🇭</div>
-                    <h3>Ghana</h3>
-                    <p>
-                        Rapid urban growth in Accra and Kumasi with aging
-                        signal infrastructure and high congestion losses.
-                    </p>
+                    <h3>Ghana — Primary Market</h3>
+                    <p>Live camera and adaptive signal work at Madina Junction, Accra, with three additional corridors currently in GPS data collection. This is where the technology is being built and validated first.</p>
                 </div>
-
-                <div class="market-card fade-in">
-                    <div class="market-flag">🇨🇮</div>
-                    <h3>Côte d'Ivoire</h3>
-                    <p>
-                        Abidjan's expanding metropolitan area requires
-                        intelligent traffic management solutions.
-                    </p>
-                </div>
-
-                <div class="market-card fade-in">
-                    <div class="market-flag">🇸🇳</div>
-                    <h3>Senegal</h3>
-                    <p>
-                        Dakar's strategic location and growing traffic
-                        demands make it an ideal pilot location.
-                    </p>
-                </div>
-
                 <div class="market-card fade-in">
                     <div class="market-flag">🌴</div>
-                    <h3>Caribbean Region</h3>
-                    <p>
-                        Island nations facing similar infrastructure
-                        challenges with limited budgets.
-                    </p>
+                    <h3>Caribbean — Second Market</h3>
+                    <p>Trinidad & Tobago and Barbados share the same core infrastructure characteristics as Ghana — unpaved sections, informal vehicle mix, similar power reliability — which is why the same system can extend here.</p>
                 </div>
-
             </div>
 
+            <p style="margin-top: 2rem; color: var(--text-muted); font-size: 0.9rem;">If a concrete pilot conversation in Ghana doesn't materialize within a set timeframe, other markets with comparable infrastructure conditions — such as Côte d'Ivoire or Senegal — would be evaluated as alternatives. This is a contingency, not a current focus.</p>
         </div>
     </section>
 
-
-    <!-- ROADMAP -->
+    <!-- Roadmap Section -->
     <section id="roadmap" class="roadmap">
-
         <div class="container">
-
-            <h2 class="section-title">
-                Roadmap
-            </h2>
-
-            <p class="section-subtitle">
-                Our path from prototype to real-world deployment.
-            </p>
-
+            <h2 class="section-title">Roadmap</h2>
+            <p class="section-subtitle">Our path from prototype to real-world deployment.</p>
+            
             <div class="timeline">
-
                 <div class="timeline-item">
-
                     <div class="timeline-dot"></div>
-
                     <div class="timeline-content">
-
-                        <h3>
-                            2026: April – August
-                        </h3>
-
-                        <p>
-                            Concept development and prototype validation.
-                            Establishing technical feasibility and creating
-                            demonstration materials.
-                        </p>
-
+                        <h3>2026: April – August</h3>
+                        <p>Concept development and prototype validation. Establishing technical feasibility and creating demonstration materials.</p>
                     </div>
-
                 </div>
-
-
                 <div class="timeline-item">
-
                     <div class="timeline-dot"></div>
-
                     <div class="timeline-content">
-
-                        <h3>
-                            2026: September – December
-                        </h3>
-
-                        <p>
-                            Institutional partnerships and pilot preparation.
-                            Engaging with government agencies, universities,
-                            and development organizations. Securing pilot locations.
-                        </p>
-
+                        <h3>2026: September – December</h3>
+                        <p>Institutional partnerships and pilot preparation. Engaging with government agencies, universities, and development organizations. Securing pilot locations.</p>
                     </div>
-
                 </div>
-
-
                 <div class="timeline-item">
-
                     <div class="timeline-dot"></div>
-
                     <div class="timeline-content">
-
-                        <h3>
-                            2027: Real-World Pilot
-                        </h3>
-
-                        <p>
-                            Deploying at a controlled intersection.
-                            Collecting operational data, validating algorithms,
-                            and documenting lessons learned.
-                        </p>
-
+                        <h3>2027: Real-World Pilot</h3>
+                        <p>Deploying at a controlled intersection. Collecting operational data, validating algorithms, and documenting lessons learned.</p>
                     </div>
-
                 </div>
-
-
                 <div class="timeline-item">
-
                     <div class="timeline-dot"></div>
-
                     <div class="timeline-content">
-
-                        <h3>
-                            2027+: Regional Expansion
-                        </h3>
-
-                        <p>
-                            Scaling to multiple cities and regions based on
-                            pilot success. Building partnerships for
-                            sustainable growth.
-                        </p>
-
+                        <h3>2027+: Regional Expansion</h3>
+                        <p>Scaling to multiple cities and regions based on pilot success. Building partnerships for sustainable growth.</p>
                     </div>
-
                 </div>
-
             </div>
-
         </div>
     </section>
 
-
-    <!-- VISION -->
-    <section id="vision" class="vision">
-
+    <!-- Vision Section -->
+    <section id="vision">
         <div class="container">
-
-            <h2 class="section-title">
-                Our Vision
-            </h2>
-
-            <p class="vision-statement">
-                "Our long-term goal is to become one of the leading
-                infrastructure technology companies serving emerging
-                markets through intelligent retrofit solutions."
-            </p>
-
+            <h2 class="section-title">Our Vision</h2>
+            <p class="vision-statement">"Make existing traffic infrastructure smarter — instead of waiting for cities to rebuild it."</p>
         </div>
-
     </section>
 
-
-    <!-- COLLABORATION -->
+    <!-- Collaboration Section -->
     <section id="collaboration" class="collaboration">
-
         <div class="container">
-
-            <h2 class="section-title">
-                Looking for Partners
-            </h2>
-
-            <p class="section-subtitle">
-                We are actively seeking institutional partners for research,
-                pilot testing, and real-world deployment.
-            </p>
-
+            <h2 class="section-title">Looking for Partners</h2>
+            <p class="section-subtitle">We are actively seeking institutional partners for research, pilot testing, and real-world deployment.</p>
+            
             <div class="collaboration-content">
-
                 <div>
-
                     <ul class="collaboration-list">
-
-                        <li>
-                            <strong>Universities</strong> –
-                            Research partnerships and student engagement
-                        </li>
-
-                        <li>
-                            <strong>Transportation Researchers</strong> –
-                            Academic validation and methodology development
-                        </li>
-
-                        <li>
-                            <strong>Government Agencies</strong> –
-                            Pilot site access and regulatory guidance
-                        </li>
-
-                        <li>
-                            <strong>Development Organizations</strong> –
-                            Funding partnerships and community impact alignment
-                        </li>
-
-                        <li>
-                            <strong>Startup Accelerators</strong> –
-                            Growth support and mentorship networks
-                        </li>
-
+                        <li><strong>Universities</strong> – Research partnerships and student engagement</li>
+                        <li><strong>Transportation Researchers</strong> – Academic validation and methodology development</li>
+                        <li><strong>Government Agencies</strong> – Pilot site access and regulatory guidance</li>
+                        <li><strong>Development Organizations</strong> – Funding partnerships and community impact alignment</li>
+                        <li><strong>Startup Accelerators</strong> – Growth support and mentorship networks</li>
                     </ul>
-
                 </div>
-
-
                 <div class="collaboration-cta">
-
-                    <p>
-                        We believe that solving traffic congestion in
-                        emerging markets requires collaboration between
-                        technology innovators, research institutions,
-                        government, and development partners.
-                    </p>
-
-                    <p>
-                        If your organization is interested in exploring
-                        a partnership, we'd like to hear from you.
-                    </p>
-
-                    <a
-                        href="mailto:akwakyea@yahoo.com"
-                        class="btn btn-primary"
-                    >
-                        Get in Touch
-                    </a>
-
+                    <p>We believe that solving traffic congestion in emerging markets requires collaboration between technology innovators, research institutions, government, and development partners.</p>
+                    <p>If your organization is interested in exploring a partnership, we'd like to hear from you.</p>
+                    <a href="mailto:akwakyea@yahoo.com" class="btn btn-primary">Get in Touch</a>
                 </div>
-
             </div>
-
         </div>
-
     </section>
 
-
-    <!-- FOOTER -->
+    <!-- Footer -->
     <footer>
-
         <div class="footer-content">
-
             <div class="footer-section">
-
-                <h3>
-                    TRACFRICA Solutions
-                </h3>
-
-                <p class="footer-tagline">
-                    Smarter Intersections. Stronger Cities.
-                </p>
-
-                <p style="margin-top: 1.5rem; font-size: 0.9rem;">
-                    Prototype stage research and development company
-                    focused on intelligent traffic infrastructure
-                    for emerging markets.
-                </p>
-
+                <h3>TRACFRICA</h3>
+                <p class="footer-tagline">Smarter Intersections. Stronger Cities.</p>
+                <p style="margin-top: 1.5rem; font-size: 0.9rem;">A pre-pilot research and development project focused on intelligent traffic infrastructure for emerging markets. Not yet a registered company.</p>
             </div>
-
-
             <div class="footer-section">
-
-                <h3>
-                    Contact
-                </h3>
-
-                <a href="mailto:akwakyea@yahoo.com">
-                    akwakyea@yahoo.com
-                </a>
-
+                <h3>Contact</h3>
+                <a href="mailto:akwakyea@yahoo.com">akwakyea@yahoo.com</a>
             </div>
-
-
             <div class="footer-section">
-
-                <h3>
-                    Connect
-                </h3>
-
-                <a
-                    href="https://linkedin.com/in/andy-kwakyea"
-                    target="_blank"
-                >
-                    LinkedIn: Andy Kwakyea
-                </a>
-
+                <h3>Connect</h3>
+                <a href="https://linkedin.com/in/andy-kwakyea" target="_blank">LinkedIn: Andy Kwakyea</a>
             </div>
-
         </div>
-
-
         <div class="footer-bottom">
-
-            <p>
-                &copy; 2026 TRACFRICA Solutions.
-                All rights reserved.
-                Pre-pilot research prototype.
-            </p>
-
+            <p>&copy; 2026 TRACFRICA. Pre-pilot research project — not yet a registered company.</p>
         </div>
-
     </footer>
 
-
-    <!-- JAVASCRIPT -->
-
     <script>
-
-        /* Animated traffic canvas background */
-
-        const canvas =
-            document.getElementById('trafficCanvas');
-
-        const ctx =
-            canvas.getContext('2d');
-
+        // Animated traffic canvas background
+        const canvas = document.getElementById('trafficCanvas');
+        const ctx = canvas.getContext('2d');
 
         function resizeCanvas() {
-
-            canvas.width =
-                window.innerWidth;
-
-            canvas.height =
-                window.innerHeight;
-
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
         }
-
 
         resizeCanvas();
+        window.addEventListener('resize', resizeCanvas);
 
-        window.addEventListener(
-            'resize',
-            resizeCanvas
-        );
-
-
+        // Simple traffic flow animation
         const vehicles = [];
-
         const vehicleCount = 15;
 
-
         class Vehicle {
-
             constructor() {
-
-                this.x =
-                    Math.random() * canvas.width;
-
-                this.y =
-                    Math.random() * canvas.height;
-
+                this.x = Math.random() * canvas.width;
+                this.y = Math.random() * canvas.height;
                 this.width = 40;
-
                 this.height = 25;
-
-                this.vx =
-                    (Math.random() - 0.5) * 2;
-
-                this.vy =
-                    (Math.random() - 0.5) * 2;
-
-                this.opacity =
-                    Math.random() * 0.3 + 0.1;
-
+                this.vx = (Math.random() - 0.5) * 2;
+                this.vy = (Math.random() - 0.5) * 2;
+                this.opacity = Math.random() * 0.3 + 0.1;
             }
-
 
             update() {
-
                 this.x += this.vx;
-
                 this.y += this.vy;
 
-
-                if (this.x > canvas.width) {
-                    this.x = -this.width;
-                }
-
-                if (this.x < -this.width) {
-                    this.x = canvas.width;
-                }
-
-                if (this.y > canvas.height) {
-                    this.y = -this.height;
-                }
-
-                if (this.y < -this.height) {
-                    this.y = canvas.height;
-                }
-
+                if (this.x > canvas.width) this.x = -this.width;
+                if (this.x < -this.width) this.x = canvas.width;
+                if (this.y > canvas.height) this.y = -this.height;
+                if (this.y < -this.height) this.y = canvas.height;
             }
-
 
             draw() {
-
-                ctx.fillStyle =
-                    `rgba(0, 135, 90, ${this.opacity})`;
-
-                ctx.fillRect(
-                    this.x,
-                    this.y,
-                    this.width,
-                    this.height
-                );
-
-
-                ctx.strokeStyle =
-                    `rgba(0, 135, 90, ${this.opacity * 2})`;
-
+                ctx.fillStyle = `rgba(0, 135, 90, ${this.opacity})`;
+                ctx.fillRect(this.x, this.y, this.width, this.height);
+                ctx.strokeStyle = `rgba(0, 135, 90, ${this.opacity * 2})`;
                 ctx.lineWidth = 1;
-
-                ctx.strokeRect(
-                    this.x,
-                    this.y,
-                    this.width,
-                    this.height
-                );
-
+                ctx.strokeRect(this.x, this.y, this.width, this.height);
             }
-
         }
 
-
-        for (
-            let i = 0;
-            i < vehicleCount;
-            i++
-        ) {
-
-            vehicles.push(
-                new Vehicle()
-            );
-
+        for (let i = 0; i < vehicleCount; i++) {
+            vehicles.push(new Vehicle());
         }
-
 
         function animateCanvas() {
-
-            ctx.clearRect(
-                0,
-                0,
-                canvas.width,
-                canvas.height
-            );
-
-
-            vehicles.forEach(
-                vehicle => {
-
-                    vehicle.update();
-                    vehicle.draw();
-
-                }
-            );
-
-
-            requestAnimationFrame(
-                animateCanvas
-            );
-
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            vehicles.forEach(vehicle => {
+                vehicle.update();
+                vehicle.draw();
+            });
+            requestAnimationFrame(animateCanvas);
         }
-
 
         animateCanvas();
 
-
-        /* Scroll animations */
-
+        // Scroll animations
         const observerOptions = {
-
             threshold: 0.1,
-
-            rootMargin:
-                '0px 0px -50px 0px'
-
+            rootMargin: '0px 0px -50px 0px'
         };
 
-
-        const observer =
-            new IntersectionObserver(
-                (entries) => {
-
-                    entries.forEach(
-                        entry => {
-
-                            if (
-                                entry.isIntersecting
-                            ) {
-
-                                entry.target.classList.add(
-                                    'visible'
-                                );
-
-                            }
-
-                        }
-                    );
-
-                },
-                observerOptions
-            );
-
-
-        document
-            .querySelectorAll('.fade-in')
-            .forEach(element => {
-
-                observer.observe(element);
-
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
             });
+        }, observerOptions);
 
+        document.querySelectorAll('.fade-in').forEach(element => {
+            observer.observe(element);
+        });
 
-        /* Smooth scrolling */
-
-        document
-            .querySelectorAll('a[href^="#"]')
-            .forEach(anchor => {
-
-                anchor.addEventListener(
-                    'click',
-                    function (e) {
-
-                        e.preventDefault();
-
-                        const target =
-                            document.querySelector(
-                                this.getAttribute('href')
-                            );
-
-
-                        if (target) {
-
-                            target.scrollIntoView({
-                                behavior: 'smooth',
-                                block: 'start'
-                            });
-
-                        }
-
-                    }
-                );
-
+        // Smooth scroll for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
             });
-
+        });
     </script>
-
 </body>
 </html>
