@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TRACFRICA Solutions - Adaptive Traffic Infrastructure</title>
+    <title>TRACFRICA - Adaptive Traffic Infrastructure</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
@@ -250,6 +250,14 @@
         .stat-label {
             color: var(--text-muted);
             font-size: 0.95rem;
+        }
+
+        .stat-source {
+            color: var(--text-muted);
+            font-size: 0.75rem;
+            margin-top: 0.5rem;
+            opacity: 0.7;
+            font-style: italic;
         }
 
         /* Why Retrofit Section */
@@ -717,6 +725,7 @@
             <ul class="nav-links">
                 <li><a href="#problem">The Problem</a></li>
                 <li><a href="#why-retrofit">Why Retrofit</a></li>
+                <li><a href="#usp">What Makes Us Different</a></li>
                 <li><a href="#how-it-works">How It Works</a></li>
                 <li><a href="#prototype">Prototype</a></li>
                 <li><a href="#collaboration">Collaborate</a></li>
@@ -728,12 +737,13 @@
     <section class="hero">
         <canvas id="trafficCanvas" class="traffic-canvas"></canvas>
         <div class="hero-content">
-            <h1>AI-Powered <span class="highlight">Adaptive Traffic</span> Infrastructure for Emerging Markets</h1>
-            <p>Retrofitting existing traffic intersections with computer vision, edge computing and adaptive signal control.</p>
+            <h1>Adaptive Traffic Control <span class="highlight">Built for How West Africa Actually Drives</span></h1>
+            <p>Trotros, okadas, unpaved feeder roads and unreliable power aren't edge cases we patch around later — they're what our detection and control logic is trained on from day one.</p>
             <div class="hero-buttons">
                 <a href="#how-it-works" class="btn btn-primary">Explore the Concept</a>
                 <a href="#prototype" class="btn btn-secondary">View the Prototype</a>
             </div>
+            <p style="margin-top: 2rem; font-size: 0.85rem; color: var(--text-muted); border-top: 1px solid var(--border); padding-top: 1.5rem; max-width: 600px; margin-left: auto; margin-right: auto;">TRACFRICA is not yet a registered company. We plan to formally incorporate once we have a validated pilot and a customer committed to investing in the product.</p>
         </div>
     </section>
 
@@ -745,12 +755,14 @@
             
             <div class="stats-grid">
                 <div class="stat-card fade-in">
-                    <div class="stat-number">$55M</div>
-                    <div class="stat-label">Annual congestion-related economic losses in major cities</div>
+                    <div class="stat-number">$416M</div>
+                    <div class="stat-label">Estimated annual economic cost of traffic congestion in Ghana</div>
+                    <div class="stat-source">Source: Glima Research, "The Cost of Gridlock" policy brief (2026)</div>
                 </div>
                 <div class="stat-card fade-in">
                     <div class="stat-number">63%</div>
                     <div class="stat-label">Operational traffic signal network (rest are broken or stolen)</div>
+                    <div class="stat-source">Source: Department of Urban Roads briefing (April 2026)</div>
                 </div>
                 <div class="stat-card fade-in">
                     <div class="stat-number">5-10x</div>
@@ -790,12 +802,42 @@
                     <div class="comparison-column highlight">
                         <h3>TRACFRICA Retrofit Approach</h3>
                         <ul>
-                            <li>Upgrade existing intersections</li>
-                            <li>Lower deployment costs (70% reduction)</li>
-                            <li>Faster time to impact (6-12 months)</li>
-                            <li>Incremental, modular scaling</li>
-                            <li>Proven edge technology stack</li>
-                            <li>Immediate operational benefits</li>
+                            <li>Upgrade existing intersections instead of rebuilding them</li>
+                            <li>Camera + edge-AI hardware only, no new road infrastructure required</li>
+                            <li>Intersection-by-intersection rollout, not one large multi-year contract</li>
+                            <li>Detection models trained on local vehicle types and road conditions, not adapted from Western traffic data</li>
+                            <li>Designed to keep functioning through power outages and non-standard driving behavior</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- USP Section -->
+    <section id="usp" class="how-it-works">
+        <div class="container">
+            <h2 class="section-title">What International Vendors Miss</h2>
+            <p class="section-subtitle">Kapsch TrafficCom, Siemens/Yunex and comparable systems are built for European and North American traffic — uniform vehicle classes, paved multi-lane roads, stable grid power. That's not the operating environment in Accra or Kumasi.</p>
+
+            <div class="comparison">
+                <div class="comparison-table">
+                    <div class="comparison-column">
+                        <h3>What International Systems Assume</h3>
+                        <ul>
+                            <li>Standardized vehicle classes (car, bus, truck)</li>
+                            <li>Paved, lane-marked roads</li>
+                            <li>Continuous grid power</li>
+                            <li>Predictable lane discipline</li>
+                        </ul>
+                    </div>
+                    <div class="comparison-column highlight">
+                        <h3>What We Design For From Day One</h3>
+                        <ul>
+                            <li>Local vehicle classes: trotros, okadas, shared taxis</li>
+                            <li>Unpaved and partially degraded road surfaces</li>
+                            <li>Frequent power outages at the intersection level</li>
+                            <li>Non-standard, informal driving behavior</li>
                         </ul>
                     </div>
                 </div>
@@ -865,6 +907,7 @@
 
             <div style="margin-top: 3rem; padding: 2rem; background-color: rgba(27, 42, 74, 0.3); border: 1px solid var(--border);">
                 <p style="color: var(--text-muted);"><strong style="color: var(--text-light);">Prototype Status:</strong> The current implementation demonstrates core technical feasibility. This is not a production-ready system. We are actively seeking institutional partners for validation, testing, and eventual pilot deployment.</p>
+                <p style="color: var(--text-muted); margin-top: 1rem;"><strong style="color: var(--text-light);">Company Status:</strong> TRACFRICA is currently a pre-pilot research and development project, not a registered legal entity. Formal incorporation is planned once a pilot has demonstrated real-world performance and at least one institutional or municipal partner is committed to adopting and paying for the product. We're deliberately sequencing it this way — proof before paperwork.</p>
             </div>
         </div>
     </section>
@@ -872,31 +915,23 @@
     <!-- Target Markets Section -->
     <section id="markets" class="target-markets">
         <div class="container">
-            <h2 class="section-title">Target Markets</h2>
-            <p class="section-subtitle">Emerging markets with high urbanization rates and aging traffic infrastructure.</p>
+            <h2 class="section-title">Where We're Building First</h2>
+            <p class="section-subtitle">One primary market, one deliberate second market with matching infrastructure conditions. Not a broad list — a focused sequence.</p>
             
             <div class="markets-grid">
-                <div class="market-card fade-in">
+                <div class="market-card fade-in" style="border-color: var(--green);">
                     <div class="market-flag">🇬🇭</div>
-                    <h3>Ghana</h3>
-                    <p>Rapid urban growth in Accra and Kumasi with aging signal infrastructure and high congestion losses.</p>
-                </div>
-                <div class="market-card fade-in">
-                    <div class="market-flag">🇨🇮</div>
-                    <h3>Côte d'Ivoire</h3>
-                    <p>Abidjan's expanding metropolitan area requires intelligent traffic management solutions.</p>
-                </div>
-                <div class="market-card fade-in">
-                    <div class="market-flag">🇸🇳</div>
-                    <h3>Senegal</h3>
-                    <p>Dakar's strategic location and growing traffic demands make it an ideal pilot location.</p>
+                    <h3>Ghana — Primary Market</h3>
+                    <p>Live camera and adaptive signal work at Madina Junction, Accra, with three additional corridors currently in GPS data collection. This is where the technology is being built and validated first.</p>
                 </div>
                 <div class="market-card fade-in">
                     <div class="market-flag">🌴</div>
-                    <h3>Caribbean Region</h3>
-                    <p>Island nations facing similar infrastructure challenges with limited budgets.</p>
+                    <h3>Caribbean — Second Market</h3>
+                    <p>Trinidad & Tobago and Barbados share the same core infrastructure characteristics as Ghana — unpaved sections, informal vehicle mix, similar power reliability — which is why the same system can extend here.</p>
                 </div>
             </div>
+
+            <p style="margin-top: 2rem; color: var(--text-muted); font-size: 0.9rem;">If a concrete pilot conversation in Ghana doesn't materialize within a set timeframe, other markets with comparable infrastructure conditions — such as Côte d'Ivoire or Senegal — would be evaluated as alternatives. This is a contingency, not a current focus.</p>
         </div>
     </section>
 
@@ -943,7 +978,7 @@
     <section id="vision">
         <div class="container">
             <h2 class="section-title">Our Vision</h2>
-            <p class="vision-statement">"Our long-term goal is to become one of the leading infrastructure technology companies serving emerging markets through intelligent retrofit solutions."</p>
+            <p class="vision-statement">"Make existing traffic infrastructure smarter — instead of waiting for cities to rebuild it."</p>
         </div>
     </section>
 
@@ -976,9 +1011,9 @@
     <footer>
         <div class="footer-content">
             <div class="footer-section">
-                <h3>TRACFRICA Solutions</h3>
+                <h3>TRACFRICA</h3>
                 <p class="footer-tagline">Smarter Intersections. Stronger Cities.</p>
-                <p style="margin-top: 1.5rem; font-size: 0.9rem;">Prototype stage research and development company focused on intelligent traffic infrastructure for emerging markets.</p>
+                <p style="margin-top: 1.5rem; font-size: 0.9rem;">A pre-pilot research and development project focused on intelligent traffic infrastructure for emerging markets. Not yet a registered company.</p>
             </div>
             <div class="footer-section">
                 <h3>Contact</h3>
@@ -990,7 +1025,7 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2026 TRACFRICA Solutions. All rights reserved. Pre-pilot research prototype.</p>
+            <p>&copy; 2026 TRACFRICA. Pre-pilot research project — not yet a registered company.</p>
         </div>
     </footer>
 
